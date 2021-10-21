@@ -5,6 +5,7 @@ import PageHeader from "../../components/PageHeader";
 import AssignmentRoundedIcon from "@material-ui/icons/AssignmentRounded";
 import SolidGameCardDemo from "../../components/card";
 import Sidebar from "../../components/Sidebar/SideBarAdmin";
+import SidebarCandid from '../../components/Sidebar/SideBarCandid';
 const muiBaseTheme = createMuiTheme();
 
 const generateClassName = createGenerateClassName({
@@ -22,7 +23,7 @@ export default function Starttest() {
 
         })}
       >
-                <Sidebar />
+                <SidebarCandid />
 
           <PageHeader
                         title="Test du code"
