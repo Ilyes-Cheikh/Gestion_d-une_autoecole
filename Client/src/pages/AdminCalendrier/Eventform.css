@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Hipster;
+    src: url(../../Assets/Fonts/Hipster\ Salter\ Font\ by\ 7NTypes.otf);
+  }
+  @font-face {
+    font-family: Tangiang;
+    src: url(../../Assets/Fonts/Tangiang.otf);
+  }
+
+#form-dialog-title{
+    color: #1a99aa !important;
+   margin-left: 170px !important;
+   
+}
+.ajouter_button{
+    margin-left: 43% !important;
+    margin-top: 20px !important;
+    font-weight: bolder !important;
+    font-family: Tangiang !important;
+    
+    font-size: 25px !important;
+    
+}

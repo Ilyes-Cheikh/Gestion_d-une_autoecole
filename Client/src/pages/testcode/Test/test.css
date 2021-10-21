@@ -1,0 +1,166 @@
+@font-face {
+  font-family: Info;
+  src: url(../../../Assets/Fonts/Straightforward\ Regular.ttf);
+}
+.container {
+  grid-area:question;
+    background-color: #ffffff;
+    width: 500px;
+    min-height: 200px;
+    height: min-content;
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow: 0 8px 16px 0 #7a7a7a;
+    justify-content: space-evenly;
+    color:#252d4a;
+    margin-left:50px;
+  }
+  .count-container {
+    grid-area:count;
+    background-color: #ffffff;
+    width: 150px;
+    min-height: 120px;
+    height: 120px;
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow:0 8px 16px 0 #7a7a7a;
+    justify-content: space-evenly;
+    color:#252d4a;
+  }
+  .timer-container {
+    grid-area:timer;
+    background-color: #ffffff;
+    width: 250px;
+    min-height: 200px;
+    height: min-content;
+    border-radius: 15px;
+    padding-top:20px;
+    box-shadow: 0 8px 16px 0 #7a7a7a;
+    justify-content: space-evenly;
+    
+    align-items: center;
+  }
+  
+.score-section {
+  
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    background-color: #ffffff;
+    width: 300px;
+    min-height: 200px;
+    height: min-content;
+    border-radius: 15px;
+    margin-left: 500px;
+    margin-top:170px;
+    box-shadow: 0 8px 16px 0 #7a7a7a ;
+    justify-content: space-evenly;
+    color:#252d4a;
+  }
+  
+  .question-section {
+    width: 100%;
+    position: relative;
+    margin-left: 300px;
+  }
+  
+  .question-count {
+   
+    text-align: center;
+    font-size: 35px;
+    align-items: center;
+  }
+  
+  .question-count span {
+    font-size: 28px;
+  }
+  
+  .question-text {
+    margin-bottom: 12px;
+    margin-top: 5px;
+    margin-left: 50px;
+    color: white;
+  }
+  
+  .timer-text {
+    background: rgb(230, 153, 12);
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 5px solid rgb(255, 189, 67);
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  /* ANSWERS/RIGHT SECTION */
+  .answer-section {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
+  .normal {
+    background-color: #ccc;
+  }
+  .correct {
+    background-color: #84ec6f;
+    
+  }
+  
+  .incorrect {
+    background-color: #ec6f6f;
+  }
+  
+  .butt:hover {
+    
+    cursor: pointer;
+    background-color: #ecd055;
+    transform: scale(1.05);
+   
+  }
+  
+  .butt:focus {
+    outline: none;
+    border:3px solid var(--white)
+  }
+  
+  .butt svg {
+    margin-right: 5px;
+  }
+ 
+  .butt{
+    
+    padding: 10px;
+    padding-left: 2%;
+    border-left: 4px solid var(--white);
+    border-right: 4px solid var(--white);
+    margin: 0 0px 10px;
+    border-radius: 30px;
+    transition: 0.2s;
+    display: flex;
+    
+    justify-content: flex-start;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 270px;
+  }
+  .nextbutt{
+    position: relative;
+      margin-left :150px;
+      
+  }
+
+.item {
+  border: 1px;
+  border-radius: 30px;
+  width: auto;
+  float:initial;
+  position: relative;
+}
+.accord{
+  grid-area:accord;
+  width :'50px';
+  position: absolute;
+}

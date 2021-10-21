@@ -1,0 +1,11 @@
+.Content h1{
+    margin: 0px 0;
+    font-size: 30px;
+    font-family: Arial,sans-serif;
+    font-weight:bolder;
+    color: var(--white);
+    text-transform: none;
+    text-shadow: none;
+    text-align: center;
+    padding-top: 0%;
+}

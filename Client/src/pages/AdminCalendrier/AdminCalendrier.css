@@ -1,0 +1,234 @@
+@font-face {
+    font-family: Hipster;
+    src: url(../../Assets/Fonts/Hipster\ Salter\ Font\ by\ 7NTypes.otf);
+  }
+  @font-face {
+    font-family: Tangiang;
+    src: url(../../Assets/Fonts/Tangiang.otf);
+  }
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background: #f2fdfd;
+}
+::-webkit-scrollbar-thumb {
+    background: #1a99aa;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+   
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    line-height: 1.5;
+   
+}
+.calendar {
+    margin-left: 200px !important;
+    width: 80%;
+    margin-top: 30px !important;
+    
+    
+}
+.calendar .header {
+    height: 6rem;
+    line-height: 4rem;
+    text-align: center;
+    background: #1a99aa;
+    color: #f2fdfd;
+}
+.calendar .header .left, .calendar .header .center, .calendar .header .right {
+    width: calc(100% / 3 - 1rem);
+    float: right;
+    font-family: hipster;
+    font-size: 25px;
+}
+.current_month{
+    font-family: hipster;
+    font-size: 35px !important;
+    margin-top: 10px;
+}
+.calendar .header .left h1, .calendar .header .center h1, .calendar .header .right h1 {
+    line-height: 1.8rem;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.calendar .header .left button, .calendar .header .center button, .calendar .header .right button {
+    background-color: #1a99aa;
+    border: 1px solid #ecd06f;
+    color: #f2fdfd;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.calendar .header .left button:hover, .calendar .header .center button:hover, .calendar .header .right button:hover {
+    background-color: #ecd06f;
+    border-color: #ecd06f;
+    color: #f2fdfd;
+    transition: all 500ms ease;
+}
+.calendar .days, .calendar .weekdays {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    
+    
+}
+.calendar .days li, .calendar .weekdays li {
+    display: block;
+    float: left;
+    width: calc(100% / 7);
+    padding: 5px;
+    box-sizing: border-box;
+    
+}
+.calendar .weekdays {
+    height: 70px !important;
+    background: #1a99aa;
+    border-bottom: 2px solid #1a99aa;
+}
+.calendar .weekdays li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #f2fdfd;
+    font-size: 13px;
+    font-weight: bold;
+}
+.calendar .weekdays .today {
+    background: #ecd06f;
+    color: #f2fdfd;
+    height: 38px;
+
+}
+.calendar .days li {
+    height: 150px;
+    overflow-y: auto;
+    background: #f2fdfd;
+    position: relative;
+    color: #1a99aa;
+    border: 1px solid #dcfafa;
+    cursor: pointer;
+    margin-bottom: -25px;
+   
+  
+}
+.calendar .days li .info {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    z-index: 1;
+    opacity: 0;
+}
+.calendar .days li .date {
+    text-align: center;
+    margin-bottom: 5px;
+    background: #1a99aa;
+    color: #f2fdfd;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+}
+.calendar .days .days-before {
+    background: #e5fbfb;
+}
+.calendar .days .days-after {
+    background: #e5fbfb;
+}
+.calendar .days .today {
+    background: #c6f6f6;
+}
+.calendar .days .today .date {
+    background: #ecd06f;
+}
+.ev {
+    display: block;
+    background: #faf3d9;
+    border: 1px solid #ecd06f;
+    border-radius: 4px;
+    margin: 5px auto;
+    transition: background 500ms ease;
+   
+}
+
+.ev:hover {
+    opacity: 0.5;
+    transition: opacity 500ms ease;
+}
+.ev-desc {
+    padding: 0.2rem 0.5rem;
+    font-size: 15px;
+    font-family: Tangiang;
+}
+.label_info {
+    background: aqua;
+    border: 1px solid aqua;
+    color: black;
+}
+.label_warning {
+    background: yellow;
+    border: 1px solid yellow;
+    color: black;
+}
+.label_primary {
+    background: blue;
+    border: 1px solid darkblue;
+    color: white;
+}
+@media (max-width: 1024px) {
+    .right {
+        display: none;
+   }
+    .calendar .header .left, .calendar .header .center {
+        width: calc(100%/2 - 1rem);
+   }
+}
+@media (max-width: 768px) {
+    .calendar .header {
+        height: auto;
+        text-align: center;
+        padding: 1rem;
+   }
+    .calendar .header .left, .calendar .header .center, .calendar .header .right {
+        width: 100%;
+        float: none;
+   }
+    .calendar .weekdays, .calendar .null {
+        display: none !important;
+   }
+    .calendar .days li {
+        height: auto !important;
+        border: 1px solid #dcfafa;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: -1px;
+   }
+    .calendar .days li .info {
+        left: 2px;
+        opacity: 1;
+        color: #ffd0f5;
+   }
+    .calendar .date {
+        float: none;
+   }
+}

@@ -1,0 +1,117 @@
+@font-face {
+    font-family: Hipster;
+    src: url(../../Assets/Fonts/Hipster\ Salter\ Font\ by\ 7NTypes.otf);
+  }
+  @font-face {
+    font-family: Betterlove;
+    src: url(../../Assets/Fonts/Betterlove.ttf);
+  }
+  @font-face {
+    font-family: Info;
+    src: url(../../Assets/Fonts/Straightforward\ Regular.ttf);
+  }
+.acc_container{
+    height: 725px;
+    width: 100%;
+    position: relative;
+    background-color: #282a2c;
+}
+
+.acc_image_container{
+    position: relative;
+    height: 625px;
+    width: 100%;
+    opacity: 0.7;
+    z-index: 1;
+    
+}
+.acc_img{
+  height: 725px;
+  width: 100%;
+  object-fit: cover;
+  z-index: 2;
+  position: absolute;
+}
+
+.car_block{
+    height: 725px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.25;
+    z-index: 3;
+    position: absolute;
+}
+
+.welcome_text{
+    text-align: left;
+    font-size: 71px;
+    z-index: 999;
+    position: absolute;
+    margin-top: -42.7%;
+    margin-left: 3.5%;
+    color: white;
+    transform: translateY(50px);
+}
+
+.bienvenue{
+    color: #df6c4f;
+    
+ 
+}
+
+.notez_bien{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    z-index: 7777;
+    width: 370px;
+    margin-top: -6%;
+    margin-left: 70%;
+    transform: translateY(50px);
+    font-family: betterlove;
+    
+    
+}
+
+.allezytext{
+    font-size: 38px;
+    position: absolute;
+    z-index: 999;
+    margin-top:-23%;
+    margin-left:59.5%;
+    color:white;
+    transform: translateY(50px);
+    font-family: Info;
+}
+
+.cadre_noir{
+    background-color: black;
+    opacity: 0.7;
+    height: 105px;
+    width: 100%;
+    position: absolute;
+    z-index: 88;
+    margin-top: -46%;
+    transform: translateY(55px);
+ 
+}
+
+.logoo{
+    position: absolute;
+    z-index:8888;
+    height: 150px;
+    width: 150px;
+    margin-top: -43%;
+    margin-left: 86%;
+    transform: translateY(50px);
+}
+
+.loginbutton{
+    margin-top: -18.5%;
+    margin-left: 55.8%;
+    position: absolute;
+    z-index:99;
+    transform: translateY(50px);
+ 
+}

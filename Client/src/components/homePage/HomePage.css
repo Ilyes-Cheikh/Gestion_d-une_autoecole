@@ -1,0 +1,283 @@
+@font-face {
+  font-family: Welcome;
+  src: url(../../Assets/Fonts/Welcome\ Newyear.otf);
+}
+@font-face {
+  font-family: Betterlove;
+  src: url(../../Assets/Fonts/Betterlove.ttf);
+}
+@font-face {
+  font-family: Seriously;
+  src: url(../../Assets/Fonts/Seriously\ DEMO.ttf);
+}
+.homePageContainer{
+    height: 625px;
+    width: 100%;
+    display: inline-table;
+}
+
+.cover{
+    height: 400px;
+    width: 800px;
+    background-color: black;
+    opacity: 0.4;
+    margin-left: 0%;
+    margin-top: -83%; 
+}
+
+.iff{
+    height: 690px;
+    width: 1000px;
+   opacity: 0.9;
+    margin-left: 0%;
+    margin-top: -8%;
+    
+}
+
+
+.homeImgContainer{
+    width: 780px;
+    height: 400px;
+    margin-left: 14%;
+    margin-top: 11%;
+    border-radius: 35px ;
+    border : 7px solid #df6c4f ; 
+   overflow: hidden;
+}
+.welcomeTag{
+    height: 160px;
+    width: 94%;
+    font-size: 41px;
+    text-align: left;
+    padding-top: 6.5%;
+    padding-left: 8%;
+    background-color: #282a2c;
+    margin-left: 6%;
+    margin-top: -46%;
+    border-radius: 30px;
+    color: #1a99aa ;
+    transform: translateY(50px);
+    font-family: welcome;
+    font-size: 48px;
+
+  
+}
+
+.whitetxt{
+    color : white;
+    font-family: Welcome;
+}
+
+.handImageStyle{
+    height: 50px;
+    width: 50px;
+   transform: translateX(-150%);
+   margin-top: -20px;
+    
+    
+}
+
+.welcomeTxt{
+    margin-top: -5.5%;
+    margin-left: 2%;
+    font-family: Welcome;
+}
+
+.animatedText{
+    animation:bg 5s linear infinite;
+    text-align:center;
+    font-size:60px;
+    font-weight:100;
+    overflow:hidden;
+    z-index: 5000;
+    position: absolute;
+    height: 420px;
+    width: 970px;
+    color: white;
+    margin-top: 4.8%;
+    text-align: center;
+    margin-left: 3%;
+    padding-top: 11%;
+}
+
+.roul{
+   margin-top: 5%;
+   font-family:Seriously !important;
+  
+}
+.dropping-texts {
+    display: inline-block;
+    width: 180px;
+    text-align: left;
+    height: 36px;
+    vertical-align: 30px;
+
+  }
+  
+  .dropping-texts > div {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top: 8px !important;
+    position:absolute;
+    font-weight:300;   
+    box-shadow: 0px 60px 25px -20px rgba(0,0,0,0.5);
+    font-family: Seriously;
+  }
+  
+  .dropping-texts > div:nth-child(1) {
+    animation: roll 5s linear infinite 0s;
+  }
+  .dropping-texts > div:nth-child(2) {
+    animation: roll 5s linear infinite 1s;
+  }
+  .dropping-texts > div:nth-child(3) {
+    animation: roll 5s linear infinite 2s;
+  }
+  .dropping-texts > div:nth-child(4) {
+    animation: roll2 5s linear infinite 3s;
+  }
+  
+  @keyframes roll {
+    0% {
+      font-size:0px;
+      opacity:0;
+      margin-left:-30px;
+      margin-top:0px;
+      transform: rotate(-25deg);
+    }
+    3% {
+      opacity:1;
+      transform: rotate(0deg);
+    }
+    5% {
+      font-size:inherit;
+      opacity:1;
+      margin-left:0px;
+      margin-top:0px;
+    }
+    20% {
+      font-size:inherit;
+      opacity:1;
+      margin-left:0px;
+      margin-top:0px;
+      transform: rotate(0deg);
+    }
+    27% {
+      font-size:0px;
+      opacity:0.5;
+      margin-left:20px;
+      margin-top:100px;
+    }
+    100% {
+      font-size:0px;
+      opacity:0;
+      margin-left:-30px;
+      margin-top:0px;
+      transform: rotate(15deg);
+    }
+  }
+  
+  @keyframes roll2 {
+    0% {
+      font-size:0px;
+      opacity:0;
+      margin-left:-30px;
+      margin-top:0px;
+      transform: rotate(-25deg);
+    }
+    3% {
+      opacity:1;
+      transform: rotate(0deg);
+    }
+    5% {
+      font-size:inherit;
+      opacity:1;
+      margin-left:0px;
+      margin-top:0px;
+    }
+    30% {
+      font-size:inherit;
+      opacity:1;
+      margin-left:0px;
+      margin-top:0px;
+      transform: rotate(0deg);
+    }
+    37% {
+      font-size:1500px;
+      opacity:0;
+      margin-left:-1000px;
+      margin-top:-800px;
+    }
+    100% {
+      font-size:0px;
+      opacity:0;
+      margin-left:-30px;
+      margin-top:0px;
+      transform: rotate(15deg);
+    }
+  }
+  
+
+.ratingSpace{
+  background-color: #1a99aa  ;
+  width : 20%;
+  margin-left: 76%;
+  border-radius: 30px;
+  height: 90px;
+  color:white;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 39%;
+  padding-top: 0.8%;
+  font-family: betterlove;
+}
+.ratingStars{
+  padding-left: 20px;
+  margin-top: -7%;
+}
+
+.arrow{
+  animation: arrow-pulse 0.82s ease-in-out infinite;
+  height: 140px; 
+}
+
+.animatedArrow1{
+   transform: rotate(90deg);
+   margin-left: 76%;
+   margin-top: -17%;
+   width: 160px;
+   
+}
+
+.animatedArrow2{
+  transform: rotate(270deg);
+  margin-left: 85%;
+  margin-top: -23%;
+  width: 160px;
+}
+
+
+@keyframes arrow-pulse {
+  0%,
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  50% {
+    -webkit-transform: translate3d(8px, 0, 0);
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+.logoEcole{
+  height: 70px;
+  margin-top: -40%;
+  margin-left: 91%;
+
+}
+
+.redirectButton{
+  margin-left: 76.5%;
+  margin-top: -16%;
+}
