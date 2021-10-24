@@ -1,8 +1,8 @@
 Pour lancer le SERVEUR  (back-end) :
-- Ouvrez le terminal (Cmd) dans le dossier Server 
-- Lancez la commande ' npm install ' pour installer les packages utilisés lors du dévéloppement
-- Lancez la commande 'npm start' pour lancer le serveur
+- Ouvrir le terminal (Cmd) dans le dossier Server 
+- Lancer la commande ' npm install ' pour installer les packages utilisés lors du dévéloppement
+- Lancer la commande 'npm start' pour lancer le serveur
 Pour lancer l'Interface (Front-ent) :
-- Ouvrez le terminal (Cmd) dans le dossier Client
-- Lancez la commande ' npm install ' pour installer les packages utilisés lors du dévéloppement
-- Lancez la commande 'npm start' pour lancer l'interface
+- Ouvrir le terminal (Cmd) dans le dossier Client
+- Lancer la commande ' npm install ' pour installer les packages utilisés lors du dévéloppement
+- Lancer la commande 'npm start' pour lancer l'interface
